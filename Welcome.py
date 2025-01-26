@@ -137,6 +137,6 @@ def display_sidebar_content() -> None:
 # Main execution
 if __name__ == "__main__":
     apply_custom_css()
-    display_logo("images/jamwithai_logo.png")
+    display_logo("images/logo.png")
     display_sidebar_content()
     display_main_content()

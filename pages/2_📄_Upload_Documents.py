@@ -43,7 +43,7 @@ st.markdown(
 )
 
 # Add a logo (replace with your own image file path or URL)
-logo_path = "images/jamwithai_logo.png"  # Replace with your logo file
+logo_path = "images/logo.png"  # Replace with your logo file
 if os.path.exists(logo_path):
     st.sidebar.image(logo_path, width=220)
 else:
@@ -52,10 +52,10 @@ else:
 
 # Sidebar header
 st.sidebar.markdown(
-    "<h2 style='text-align: center;'>Jam with AI</h2>", unsafe_allow_html=True
+    "<h2 style='text-align: center;'>Asisten Penelusuran Arsip</h2>", unsafe_allow_html=True
 )
 st.sidebar.markdown(
-    "<h4 style='text-align: center;'>Your Document Assistant</h4>",
+    "<h4 style='text-align: center;'></h4>",
     unsafe_allow_html=True,
 )
 
@@ -63,7 +63,7 @@ st.sidebar.markdown(
 st.sidebar.markdown(
     """
     <div class="footer-text">
-        © 2024 Jam with AI
+        © 2024 Arsip Nasional RI
     </div>
     """,
     unsafe_allow_html=True,

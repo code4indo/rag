@@ -17,7 +17,7 @@ setup_logging()  # Configures logging for the application
 logger = logging.getLogger(__name__)
 
 # Set page configuration
-st.set_page_config(page_title="Jam with AI - Chatbot", page_icon="🤖")
+st.set_page_config(page_title="Chatbot", page_icon="🤖")
 
 # Apply custom CSS
 st.markdown(
@@ -44,7 +44,7 @@ logger.info("Custom CSS applied.")
 # Main chatbot page rendering function
 def render_chatbot_page() -> None:
     # Set up a placeholder at the very top of the main content area
-    st.title("Jam with AI - Chatbot 🤖")
+    st.title("Chatbot 🤖")
     model_loading_placeholder = st.empty()
 
     # Initialize session state variables for chatbot settings
@@ -83,7 +83,7 @@ def render_chatbot_page() -> None:
     )
 
     # Display logo or placeholder
-    logo_path = "images/jamwithai_logo.png"
+    logo_path = "images/logo.png"
     if os.path.exists(logo_path):
         st.sidebar.image(logo_path, width=220)
         logger.info("Logo displayed.")
@@ -93,10 +93,10 @@ def render_chatbot_page() -> None:
 
     # Sidebar headers and footer
     st.sidebar.markdown(
-        "<h2 style='text-align: center;'>Jam with AI</h2>", unsafe_allow_html=True
+        "<h2 style='text-align: center;'>Asisten Penelusuran AI</h2>", unsafe_allow_html=True
     )
     st.sidebar.markdown(
-        "<h4 style='text-align: center;'>Your Conversational Platform</h4>",
+        "<h4 style='text-align: center;'> </h4>",
         unsafe_allow_html=True,
     )
 
@@ -104,7 +104,7 @@ def render_chatbot_page() -> None:
     st.sidebar.markdown(
         """
         <div class="footer-text">
-            © 2024 Jam with AI
+            © 2024 Arsip Nasional RI
         </div>
         """,
         unsafe_allow_html=True,
